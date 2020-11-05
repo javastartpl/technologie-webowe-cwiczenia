@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wypożyczalnia samochodów Carrent</title>
+        <meta name="description" content="Wynajmij samochód i wyruszaj w podróż.">
+    </head>
+    <body>
+        <h1>Wypożycz samochód</h1>
+        <form>
+            <fieldset>
+                <legend>Dane wypożyczającego</legend>
+                <div>
+                    <label for="name">Imię i nazwisko</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="birthday">Data urodzenia</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="driving-license-id">Numer prawa jazdy</label>
+                    <input type="text" id="driving-license-id">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dane kontaktowe</legend>
+                <div>
+                    <label for="email">Adres email</label>
+                    <input type="email" placeholder="john@example.com">
+                </div>
+                <div>
+                    <label for="telephone">Telefon</label>
+                    <input type="number" id="telephone" placeholder="111 222 333">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Wybór samochodu</legend>
+                <select id="car">
+                    <option>Opel Corsa</option>
+                    <option>Fiat 500</option>
+                    <option>Toyota Prius</option>
+                    <option>Mercedes GLA200</option>
+                </select>
+                <div>
+                    <p>Dodatkowa nawigacja</p>
+                    <label for="navi-no">Nie</label>
+                    <input type="radio" id="navi-no" name="navi" value="Nie" checked>
+                    <label for="navi-yes">Tak</label>
+                    <input type="radio" id="navi-yes" name="navi" value="Tak">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Okres wynajmu</legend>
+                <div>
+                    <label for="start-date">Początek wynajmu</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div>
+                    <label for="pickup-place">Miejsce odbioru</label>
+                    <select id="pickup-place">
+                        <option>Lotnisko</option>
+                        <option>Dworzec PKP</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="end-date">Data zwrotu</label>
+                    <input type="date" id="end-date">
+                </div>
+                <div>
+                    <label for="pickup-place">Miejsce odbioru</label>
+                    <select id="return-place">
+                        <option>Lotnisko</option>
+                        <option>Dworzec PKP</option>
+                        <option>Dowolna lokalizacja (+100zł)</option>
+                    </select>
+                </div>
+                <p>*Odbioru i zwrotu należy dokonać w godzinach 6-22, opłata naliczana jest za pełne doby</p>
+            </fieldset>
+            <fieldset>
+                <legend>Dodatkowe uwagi</legend>
+                <textarea cols="50" rows="10" placeholder="Jeżeli masz dodatkowe uwagi, to wpisz je tutaj"></textarea>
+            </fieldset>
+            <button>Wypożycz</button>
+        </form>
+    </body>
+</html>
