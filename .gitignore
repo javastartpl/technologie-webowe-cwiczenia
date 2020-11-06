@@ -1,1 +1,13 @@
 .DS_Store
+.metadata/
+.recommenders/
+**/target/
+**/.settings/
+**/.project
+**/.classpath
+**/.tern-project
+**/bin/
+Servers/
+**/out
+**/.idea
+**.iml
