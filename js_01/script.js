@@ -6,6 +6,7 @@ const seconds = minutes * 60;
 //                     + "To " + hours + " godzin, " 
 //                     + minutes + " minut lub " 
 //                     + seconds + " sekund."
+// alert(textToDisplay);
 console.log("Od początku roku minęło " + day + "dni. To:")
 console.log(hours + " godzin, " );
 console.log(minutes + " minut," );
