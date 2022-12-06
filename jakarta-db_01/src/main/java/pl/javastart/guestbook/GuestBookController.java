@@ -23,7 +23,7 @@ public class GuestBookController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         BookEntry bookEntry = getBookEntry(request);
         bookEntryDao.save(bookEntry);
-        response.sendRedirect(request.getContextPath());
+        response.sendRedirect(request.getContextPath() + "/");
     }
 
     private BookEntry getBookEntry(HttpServletRequest request) {
